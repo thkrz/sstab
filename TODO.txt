@@ -1,0 +1,9 @@
+Name: sstab
+File Format: netcdf4
+Tools:
+  - create profile add,overwrite
+  - create paleo-profile add,remove
+  - create stratigraphy (inclined) add,remove
+  - list/edit layers
+  - show cross section
+  - print command history
