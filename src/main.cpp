@@ -52,7 +52,7 @@ main(int, char **)
     glfwGetPrimaryMonitor());  // Valid on GLFW 3.3+ only
   GLFWwindow *window
     = glfwCreateWindow((int)(1280 * main_scale), (int)(800 * main_scale),
-      "Dear ImGui GLFW+OpenGL3 example", nullptr, nullptr);
+      "SSTAB", nullptr, nullptr);
   if (window == nullptr)
     return 1;
   glfwMakeContextCurrent(window);
@@ -109,7 +109,7 @@ main(int, char **)
   // IM_ASSERT(font != nullptr);
 
   // Our state
-  ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+  ImVec4 clear_color = ImVec4(0.33f, 0.33f, 0.33f, 1.00f);
 
   // Main loop
   while (!glfwWindowShouldClose(window)) {
