@@ -12,9 +12,8 @@ OBJ = $(SRC:.cpp=.o)
 LINUX_GL_LIBS = -lGL
 
 CXXFLAGS = -std=c++11 -Wall -Wformat -I./libimgui
-CXXFLAGS += `pkg-config sdl3 --cflags`
 CFLAGS = $(CXXFLAGS)
-LIBS = -s -ldl `pkg-config sdl3 --libs`
+LIBS = -s -lglfw -lGL
 
 %.o:%.cpp
 	@echo CXX $<
